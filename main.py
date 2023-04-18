@@ -123,6 +123,8 @@ It looks like we will soon have more rabbits!"""
 # write your code here
 list_of_habitats = [camel, lion, deer, goose, bat, rabbit]
 habitat_choose = int(input('Please enter the number of the habitat you would like to view: > '))
+
 print(list_of_habitats[habitat_choose])
+print(len(list_of_habitats))
 print('---')
 print("You've reached the end of the program. To check another habitat, please restart the watcher.")

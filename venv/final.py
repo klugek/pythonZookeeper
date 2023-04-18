@@ -122,12 +122,24 @@ It looks like we will soon have more rabbits!"""
 
 # write your code here
 list_of_habitats = [camel, lion, deer, goose, bat, rabbit]
-try:
-    habitat_choose = int(input('Please enter the number of the habitat you would like to view: > '))
-    len_of_hab = len(list_of_habitats)
-    for habitat_choose in len_of_hab:
-        print(list_of_habitats[habitat_choose])
-        habitat_choose = int(input('Please enter the number of the habitat you would like to view: > '))
-except ValueError:
-    print('---')
-    print("You've reached the end of the program. To check another habitat, please restart the watcher.")
+habitat = ""
+while habitat != "exit":
+    habitat = input("Please enter the number of the habitat you would like to view: ")
+    if habitat == "exit":
+        break
+    elif habitat == "0":
+        print(camel)
+    elif habitat == "1":
+        print(lion)
+    elif habitat == "2":
+        print(deer)
+    elif habitat == "3":
+        print(goose)
+    elif habitat == "4":
+        print(bat)
+    elif habitat == "5":
+        print(rabbit)
+    else:
+        print("Invalid input, please try again")
+print("See you later!")
+
